@@ -17,7 +17,7 @@ if choice == 1:
     cap = cv2.VideoCapture(0)
 
 elif choice == 2:
-    video_path = input('Insert video\'s relative path: ')
+    video_path = input('Insert video\'s path: ')
     cap = cv2.VideoCapture(video_path)
 
 else:
