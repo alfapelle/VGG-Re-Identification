@@ -14,4 +14,4 @@ To run this project is necessary to download http://www.robots.ox.ac.uk/~vgg/sof
 and put the folder in the Re-IdentificationVGG folder.
 After that run VGG_CreateModel.py to create the VGG face model.
 Run the re_id_euclidean.py in which it is possible to choose the video source, webcam or saved video (to quit the execution on
-a video press 'q'.
+a video press 'q').
