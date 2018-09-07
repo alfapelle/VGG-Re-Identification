@@ -36,6 +36,10 @@ dict_faces = {}
 last_pos = list()
 last_l_id = list()
 
+# Set camera resolution
+ret = cap.set(3, 240)
+ret = cap.set(4, 320)
+
 while True:
     pos = list()
     l_id = list()
@@ -43,10 +47,6 @@ while True:
     ret, frame = cap.read()
     f_num = cap.get(cv2.CAP_PROP_POS_FRAMES)
     print("frame num ", t)
-
-    # resize cap
-    ret = cap.set(3, 240)
-    ret = cap.set(4, 320)
 
     # Our operations on the frame come here
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
